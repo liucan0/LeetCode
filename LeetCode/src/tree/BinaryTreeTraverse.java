@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 二叉树的前序,中序,后序遍历
+ * 二叉树的前序,中序,后序遍历.
+ * 遍历的时间复杂度为O(n),因为每个节点只会被访问一次
  * @author liucan
  *
  */
@@ -82,4 +83,6 @@ public class BinaryTreeTraverse<E> {
 			return 1 + Math.max(depth(node.left),depth(node.right));
 		}
 	}
+	
+	
 }
