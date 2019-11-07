@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 描述：<br>
- * 3个线程交替打印a,b,c
+ * 场景题：使用3个线程交替打印a,b,c
  * @ClassName ThreadsPrintNumsAlternately
  * @Author liucan
  * @Date 2019/11/4 下午4:31
