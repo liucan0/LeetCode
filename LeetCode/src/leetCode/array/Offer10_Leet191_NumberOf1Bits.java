@@ -21,7 +21,6 @@ public class Offer10_Leet191_NumberOf1Bits {
 	 */
 	public static int hammingWeight(int n) {
 		int count = 0;
-		System.out.println(Integer.toBinaryString(n));
 		while (n != 0) {
 			if ((n & 1) == 1) {
 				count++;
@@ -30,7 +29,21 @@ public class Offer10_Leet191_NumberOf1Bits {
 			 * 负数使用>>右移时会因为高位补全陷入无限循环，所以要用>>>进行无符号右移
 			 */
 			n = n >>> 1;
-			System.out.println(Integer.toBinaryString(n));
+		}
+		return count;
+	}
+
+	/**
+	 * 解法二：把一个证书减去1，在和原来的数左与运算，就会把二进制值中最右边的1变成0，
+	 * 二进制中有多少个1就能进行多少次运算
+	 * @param n
+	 * @return
+	 */
+	public static int hammingWeight1(int n) {
+		int count = 0;
+		while (n != 0) {
+			count++;
+			n = (n - 1) & n;
 		}
 		return count;
 	}
@@ -38,6 +51,6 @@ public class Offer10_Leet191_NumberOf1Bits {
 	public static void main(String[] args) {
 		int a = -12;
 		System.out.println(Offer10_Leet191_NumberOf1Bits.hammingWeight(a));
-//		System.out.println("二进制" + Integer.toBinaryString(a));
+		System.out.println("二进制" + Integer.toBinaryString(a));
 	}
 }
