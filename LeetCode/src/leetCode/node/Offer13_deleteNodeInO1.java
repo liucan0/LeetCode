@@ -10,7 +10,7 @@ import base.ListNode;
  * @Date 2019/10/31 下午8:21
  * @Version 1.0
  **/
-public class Offer_13_deleteNodeInO1 {
+public class Offer13_deleteNodeInO1 {
 
 	/**
 	 * 前提：要删除的结点在链表中

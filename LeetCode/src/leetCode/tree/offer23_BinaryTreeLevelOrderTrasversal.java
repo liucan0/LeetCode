@@ -18,7 +18,7 @@ import java.util.Queue;
  * @Date 2019/7/18 下午5:00
  * @Version 1.0
  **/
-public class offer_23_BinaryTreeLevelOrderTrasversal {
+public class offer23_BinaryTreeLevelOrderTrasversal {
 
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		//最后返回的list

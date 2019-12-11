@@ -10,7 +10,7 @@ package leetCode.string;
  * @Date 2019/8/22 下午3:00
  * @Version 1.0
  **/
-public class Offer_4_ReplaceString {
+public class Offer4_ReplaceString {
 	/**
 	 * 思路：
 	 * 首先统计源字符串找到有多少个需要替换的字符，创建一个替换完成后长度的字符数组，

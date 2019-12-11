@@ -12,7 +12,7 @@ import base.ListNode;
  * @Date 2019/10/31 下午8:43
  * @Version 1.0
  **/
-public class Offer_15_FindKthNodeDesc {
+public class Offer15_FindKthNodeDesc {
 
 	public static ListNode findKthNodeDesc(ListNode root, int k) {
 		if (root == null || k <= 0) {

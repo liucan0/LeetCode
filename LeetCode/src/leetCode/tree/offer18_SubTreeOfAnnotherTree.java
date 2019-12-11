@@ -12,7 +12,7 @@ import base.TreeNode;
  * @Date 2019/7/18 上午10:28
  * @Version 1.0
  **/
-public class offer_18_SubTreeOfAnnotherTree {
+public class offer18_SubTreeOfAnnotherTree {
 
 	/**
 	 * 1.找到是否含有相同结点，

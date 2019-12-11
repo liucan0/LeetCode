@@ -13,7 +13,7 @@ import java.util.Stack;
  * @Date 2019/8/22 下午3:47
  * @Version 1.0
  **/
-public class Offer_5_PrintListLastToFirst {
+public class Offer5_PrintListLastToFirst {
 
 	/**
 	 * 使用栈

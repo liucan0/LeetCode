@@ -11,7 +11,7 @@ import base.TreeNode;
  * @Date 2019/8/22 下午4:40
  * @Version 1.0
  **/
-public class Offer_6_RebuildTreeFromPreorderAndInOrderTrasversal {
+public class Offer6_RebuildTreeFromPreorderAndInOrderTrasversal {
 
 	/**
 	 *　在前序遍历中，第一个结点一定是根节点，

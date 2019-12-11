@@ -15,7 +15,7 @@ import java.util.Queue;
  * @Date 2019/8/23 上午11:10
  * @Version 1.0
  **/
-public class Offer_7_ImplementStackUsingQueue {
+public class Offer7_ImplementStackUsingQueue {
 	//存放压入的数据
 	Queue<Integer> first = new LinkedList<>();
 	//存放交换的数据
@@ -76,7 +76,7 @@ public class Offer_7_ImplementStackUsingQueue {
 	}
 
 	public static void main(String[] args) {
-		Offer_7_ImplementStackUsingQueue stack = new Offer_7_ImplementStackUsingQueue();
+		Offer7_ImplementStackUsingQueue stack = new Offer7_ImplementStackUsingQueue();
 		stack.push(1);
 		stack.push(2);
 		stack.push(3);

@@ -13,7 +13,7 @@ import java.util.Stack;
  * @Date 2019/8/23 上午10:19
  * @Version 1.0
  **/
-public class Offer_7_ImplementQueueUsingStacks {
+public class Offer7_ImplementQueueUsingStacks {
 	//存放入栈顺序元素
 	Stack<Integer> first = new Stack<>();
 	//存放出栈顺序元素
@@ -74,7 +74,7 @@ public class Offer_7_ImplementQueueUsingStacks {
 	}
 
 	public static void main(String[] args) {
-		Offer_7_ImplementQueueUsingStacks queue = new Offer_7_ImplementQueueUsingStacks();
+		Offer7_ImplementQueueUsingStacks queue = new Offer7_ImplementQueueUsingStacks();
 		queue.push(7);
 		queue.push(6);
 		queue.push(5);

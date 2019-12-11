@@ -11,7 +11,7 @@ import base.TreeNode;
  * @Date 2019/7/18 下午4:25
  * @Version 1.0
  **/
-public class offer_19_InvertBinaryTree {
+public class offer19_InvertBinaryTree {
 
 	public TreeNode invertTree(TreeNode root) {
 		if (root == null) {
