@@ -18,20 +18,26 @@ public class Offer4_Leet74_SearchA2DMatrix {
 	 * @param target
 	 * @return
 	 */
-	public boolean searchMatrix(int[][] matrix, int target) {
+	public static boolean searchMatrix(int[][] matrix, int target) {
 		if (matrix == null || matrix.length == 0) {
 			return false;
 		}
-		for (int row = 0, column = matrix[0].length - 1 ; row < matrix.length && column >= 0; ) {
-			int compareNum = matrix[row][column];
-			if (compareNum == target) {
+		for (int row = 0, column = matrix[0].length - 1; row < matrix.length && column >= 0;) {
+			int curr = matrix[row][column];
+			if (target == curr) {
 				return true;
-			} else if (compareNum < target) {
-				row++;
-			} else {
+			} else if (target < curr) {
 				column--;
+			} else {
+				row++;
 			}
 		}
 		return false;
+	}
+
+	public static void main(String[] args) {
+		int[][] input = {{1,2,3,4}, {5,6,7,8}, {9,10,11,12}, {13,14,15,16}};
+		System.out.println(searchMatrix(input, 2));
+		System.out.println(searchMatrix(input, 0));
 	}
 }
