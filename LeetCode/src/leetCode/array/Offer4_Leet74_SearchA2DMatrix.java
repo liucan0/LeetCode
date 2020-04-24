@@ -10,7 +10,7 @@ package leetCode.array;
  * @Date 2019/8/22 上午10:55
  * @Version 1.0
  **/
-public class Offer3_Leet74_SearchA2DMatrix {
+public class Offer4_Leet74_SearchA2DMatrix {
 
 	/**
 	 * 从矩阵右上角顶点开始比较。比target小则行数加1，比target大则列数减1
