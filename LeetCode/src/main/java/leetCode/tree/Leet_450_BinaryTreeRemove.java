@@ -4,13 +4,14 @@ import base.TreeNode;
 
 /**
  * 描述：<br>
+ * leetCode_450. 删除二叉搜索树中的节点
  * 给出一个二叉树，删除指定结点
  * @ClassName BinaryTreeRemove
  * @Author liucan
  * @Date 2019/7/16 下午10:48
  * @Version 1.0
  **/
-public class BinaryTreeRemove {
+public class Leet_450_BinaryTreeRemove {
 	public TreeNode deleteNode(TreeNode root, int key) {
 		if (root == null) {
 			return null;
