@@ -11,7 +11,7 @@ import base.TreeNode;
  * @Date 2019/7/16 上午10:32
  * @Version 1.0
  **/
-public class MaxDeepthOfBinaryTree {
+public class Leet_104_MaxDeepthOfBinaryTree {
 	int deepth = 0;
 	public int maxDepth(TreeNode root) {
 		if (root == null) {

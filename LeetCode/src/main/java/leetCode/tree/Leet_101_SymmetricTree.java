@@ -12,7 +12,7 @@ import base.TreeNode;
  * @Version 1.0
  **/
 
-public class SymmetricTree {
+public class Leet_101_SymmetricTree {
 
 	public boolean isSymmetric(TreeNode root) {
 		if (root == null) {

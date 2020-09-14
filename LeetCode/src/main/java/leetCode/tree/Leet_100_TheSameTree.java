@@ -11,7 +11,7 @@ import base.TreeNode;
  * @Date 2019/7/15 下午11:13
  * @Version 1.0
  **/
-public class TheSameTree {
+public class Leet_100_TheSameTree {
 
 	public boolean isSameTree(TreeNode p, TreeNode q) {
 		if(p == null && q == null){
