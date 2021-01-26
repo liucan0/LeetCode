@@ -12,14 +12,24 @@ package leetCode.array;
  * @author Administrator
  *
  */
-public class RemoveDuplicates {
+public class Leet_26_RemoveDuplicates {
+    /**
+     * 双指针，快指针遍历，慢指针指向最后一个不重复节点。
+     * 当快慢指针指向的值不同时，满指针++，再将满指针位置处的值更新为快指针的值
+     * @param nums
+     * @return
+     */
 	public int removeDuplicates(int[] nums) {
-       int index = 1;
-       for(int i = 0; i < nums.length; i++){
-    	   if(i < nums.length - 1 && nums[i+1] != nums[i] ){
-    		   nums[index++] = nums[i+1];
-    	   }
+       if (nums == null || nums.length == 0) {
+           return 0;
        }
-       return index + 1;
+       int i = 0;
+       for (int j = 1; j < nums.length; j++) {
+           if (nums[j] != nums[i]) {
+               i++;
+               nums[i] = nums[j];
+           }
+       }
+       return i + 1;
     }
 }

@@ -20,7 +20,7 @@ public class Leet_107_levelOrderBottom {
             return result;
         }
         Queue<List<TreeNode>> nodeQueue = new LinkedList<>();
-        nodeQueue.add(new ArrayList<>(){
+        nodeQueue.add(new ArrayList<TreeNode>(){
             {
                 add(root);
             }

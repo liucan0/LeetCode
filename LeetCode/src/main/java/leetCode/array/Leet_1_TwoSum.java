@@ -15,7 +15,7 @@ import java.util.Map;
  * @author Administrator
  *
  */
-public class TwoSum {
+public class Leet_1_TwoSum {
 
 	/**
 	 * O(n)时间复杂度，O(n)空间复杂度。
@@ -25,15 +25,19 @@ public class TwoSum {
 	 * @return
 	 */
 	public int[] twoSum(int[] nums, int target) {
-		Map<Integer, Integer> map = new HashMap<>();
-		for (int i = 0; i < nums.length; i++) {
-			int key = target - nums[i];
-			if (map.containsKey(key)) {
-				return new int[] {map.get(key), i};
-			}
-			map.put(nums[i], i);
+		if (nums == null || nums.length == 0) {
+			return nums;
 		}
-		throw new RuntimeException();
+		Map<Integer, Integer> numIndexMap = new HashMap<>();
+		for (int i = 0; i < nums.length; i++) {
+			Integer exsitIndex = numIndexMap.get(target - nums[i]);
+			if (exsitIndex != null && exsitIndex != i) {
+				return new int[]{exsitIndex, i};
+			} else {
+				numIndexMap.put(nums[i], i);
+			}
+		}
+		return null;
 	}
 
 	/**
