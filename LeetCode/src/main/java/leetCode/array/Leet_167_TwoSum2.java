@@ -12,7 +12,7 @@ package leetCode.array;
 public class Leet_167_TwoSum2 {
 
     /**
-     * 定义头指针a和尾指针b,因为数组已经升序排序，a指向最小值，b指向最大值。
+     * 定义头指针a和尾指针b,因为数组已经升序排序，a指向最小值，b指向最大值
      * 若numbers[a] + number[b]小于target,则a++，大于target则b--，两指针相邻时若和还不等于target,
      * 则判定无满足的值。
      * @param numbers
