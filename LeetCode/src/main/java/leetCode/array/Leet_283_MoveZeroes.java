@@ -18,7 +18,8 @@ import java.util.Arrays;
 public class Leet_283_MoveZeroes {
 
     /**
-     *
+     * 初始定义双指针left,right,left左边的数字都不为0,
+     * right左边到left的区间内值都为0.当right指向的值不为0时，和left指向的值交换，left自增
      * @param nums
      */
     public void moveZeroes(int[] nums) {
