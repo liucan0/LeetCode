@@ -18,6 +18,12 @@ package leetCode.string;
  */
 public class Leet_14_LongestCommonPrefix {
 
+    /**
+     * 纵向扫描，取第一个字符串a为基准，对a中的每一个字符都与数组中
+     * 其他字符串相同位置的进行比较，若不相等则返回,相等则继续比较
+     * @param strs
+     * @return
+     */
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
             return "";
