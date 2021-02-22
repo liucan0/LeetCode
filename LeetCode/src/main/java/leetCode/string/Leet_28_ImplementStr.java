@@ -20,7 +20,7 @@ package leetCode.string;
  *
  * 对于本题而言，当 needle 是空字符串时我们应当返回 0 。这与C语言的 strstr() 以及 Java的 indexOf() 定义相符。
  */
-public class Leet_28_ImplmentStr {
+public class Leet_28_ImplementStr {
 
     /**
      * 将needle作为滑动窗口，依次比较输入数组中对应位置的子串是否与needle相等
@@ -44,7 +44,7 @@ public class Leet_28_ImplmentStr {
     public static void main(String[] args) {
         String haystack = "a";
         String needle = "a";
-        Leet_28_ImplmentStr instance = new Leet_28_ImplmentStr();
+        Leet_28_ImplementStr instance = new Leet_28_ImplementStr();
         System.out.println(instance.strStr(haystack, needle));
     }
 }
