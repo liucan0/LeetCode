@@ -24,6 +24,12 @@ package leetCode.string;
  */
 public class Leet_67_AddBinary {
 
+    /**
+     * 字符串从后往前遍历，较短字符串前面补0.
+     * @param a
+     * @param b
+     * @return
+     */
     public String addBinary(String a, String b) {
         StringBuilder sb = new StringBuilder();
         int length = Math.max(a.length(), b.length()), carry = 0;
