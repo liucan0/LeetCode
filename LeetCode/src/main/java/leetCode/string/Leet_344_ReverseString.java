@@ -23,6 +23,10 @@ import java.util.Arrays;
  */
 public class Leet_344_ReverseString {
 
+    /**
+     * 双指针，交换前后指针值，左指针++，右指针--
+     * @param s
+     */
     public void reverseString(char[] s) {
         if (s == null || s.length == 0) {
             return;
