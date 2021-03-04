@@ -27,10 +27,23 @@ public class ListNode {
 		return node;
 	}
 
+	public static void print(ListNode head) {
+		StringBuilder sb = new StringBuilder("[");
+		while (head != null) {
+			sb.append(head.val);
+			if (head.next != null) {
+				sb.append(",");
+			}
+			head = head.next;
+		}
+		sb.append("]");
+		System.out.println(sb.toString());
+	}
+
 	public static void main(String[] args) {
 		int[] a = {0,1,2,3,4,5};
 		ListNode temp = ListNode.init(a);
-		System.out.println(temp);
+		ListNode.print(temp);
 	}
 
 }
