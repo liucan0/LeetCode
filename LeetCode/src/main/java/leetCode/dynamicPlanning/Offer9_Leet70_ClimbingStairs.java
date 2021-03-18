@@ -12,22 +12,17 @@ package leetCode.dynamicPlanning;
 public class Offer9_Leet70_ClimbingStairs {
 
 	public int climbStairs(int n) {
-		if (n < 0) {
-			throw new RuntimeException();
+		int first = 0, second = 0, third = 1;
+		for (int i = 1; i <= n; i++) {
+			first = second;
+			second = third;
+			third = first + second;
 		}
-		if (n == 1) {
-			return 1;
-		} else if (n == 2) {
-			return 2;
-		}
-		int first = 1;
-		int second = 2;
-		for (int i = 1; i < n - 1; i++) {
-			int temp = second;
-			second = first + second;
-			first = temp;
-		}
-		return second;
+		return third;
 	}
 
+	public static void main(String[] args) {
+		Offer9_Leet70_ClimbingStairs instance = new Offer9_Leet70_ClimbingStairs();
+		System.out.println(instance.climbStairs(2));
+	}
 }
