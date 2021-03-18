@@ -9,6 +9,13 @@ import base.TreeNode;
  * 本题中，一棵高度平衡二叉树定义为：
  *
  * 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。
+ * 示例 1：
+ * 输入：root = [3,9,20,null,null,15,7]
+ * 输出：true
+ * 示例 3：
+ *
+ * 输入：root = []
+ * 输出：true
  */
 public class Leet_110_IsBalancedTree {
     /**
@@ -18,7 +25,7 @@ public class Leet_110_IsBalancedTree {
      */
     public boolean isBalanced(TreeNode root) {
         if (root == null) {
-            return false;
+            return true;
         }
         int leftHeight = getHeight(root.left);
         int rightHeight = getHeight(root.right);
@@ -29,9 +36,9 @@ public class Leet_110_IsBalancedTree {
         if (node == null) {
             return 0;
         }
-        int left = 1 + getHeight(node.left);
-        int right = 1 + getHeight(node.right);
-        return Math.max(left, right);
+        int left = getHeight(node.left);
+        int right = getHeight(node.right);
+        return Math.max(left, right) + 1;
     }
 
     public static void main(String[] args) {

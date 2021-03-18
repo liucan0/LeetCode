@@ -12,7 +12,7 @@ import java.util.*;
  * @Date 2020/9/15 下午6:35
  * @Version 1.0.0
  */
-public class Leet_107_levelOrderBottom {
+public class Leet_107_LevelOrderBottom {
 
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         Stack<List<Integer>> result = new Stack<>();
