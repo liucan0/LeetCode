@@ -24,7 +24,7 @@ import base.TreeNode;
  * 9   6 3   1
  *
  */
-public class Leet_266_InvertTree {
+public class Leet_226_InvertTree {
 
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
