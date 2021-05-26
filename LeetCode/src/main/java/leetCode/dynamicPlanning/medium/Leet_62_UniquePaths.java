@@ -1,4 +1,4 @@
-package leetCode.dynamicPlanning.simple;
+package leetCode.dynamicPlanning.medium;
 
 /**
  * leetcode 62 不同路径(动态规划)
