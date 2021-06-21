@@ -47,8 +47,10 @@ public class Leet_103_BinaryZigzagLevelOrderTraversal {
             for (int i = 0; i < size; i++) {
                 TreeNode curr = nodesQueue.poll();
                 if (toRight) {
+                    //当前遍历方向从左往右时，值插入队尾
                     levelList.addLast(curr.val);
                 } else {
+                    //当前遍历方向从右往左时，值插入队头
                     levelList.addFirst(curr.val);
                 }
                 if (curr.left != null) {
