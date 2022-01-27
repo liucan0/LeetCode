@@ -1,4 +1,4 @@
-package leetCode.array.medium;
+package leetCode.backtracking.medium;
 
 import com.alibaba.fastjson.JSON;
 
@@ -66,7 +66,7 @@ public class Leet_78_Subsets {
      * 而[curr,n-1]位置的状态是不确定的，dfs(curr,n)需要确定curr位置的状态，然后求解子问题dfs(curr+1,n).
      * 对于curr位置，我们需要考虑nuns[curr]取或是不取，如果取，我们需要把nunms[curr]放入一个临时数组t，
      * 再执行dfs(curr+1,n)，执行结束后需要对t进行回溯；如果不取，则直接执行dfs(curr+1,n).
-     * 在整个递归调用的过程中，curr时从小到大递增的，当curr增加到n的是时候，记录答案并终止递归。
+     * 在整个递归调用的过程中，curr是从小到大递增的，当curr增加到n的是时候，记录答案并终止递归。
      * @param curr 当前数组位置
      * @param nums 输入数组
      */
@@ -74,6 +74,7 @@ public class Leet_78_Subsets {
 
         if (curr == nums.length) {
             ans.add(new ArrayList<Integer>(t));
+            System.out.println(t);
             return;
         }
         t.add(nums[curr]);
